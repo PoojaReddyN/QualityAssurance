@@ -14,18 +14,18 @@ public class WordDocTest {
             try {
                 Runtime.getRuntime().exec(wordPath);
                 Robot robot = new Robot();
-                robot.delay(3000);
+                robot.delay(2000);
                 robot.keyPress(KeyEvent.VK_CONTROL);
                 robot.keyPress(KeyEvent.VK_N);
                 robot.keyRelease(KeyEvent.VK_N);
                 robot.keyRelease(KeyEvent.VK_CONTROL);
                 robot.delay(1000);
 
-                String message = "Hello!! This is an automated Word document created using WinAppDriver. Iam Pooja Nuthula, a java automation tester.";
+                String message = "Hello!! This is an automated Word document created using robot class. Iam Pooja Nuthula, a java automation tester.";
                 for (char c : message.toCharArray()) {
                     robot.keyPress(KeyEvent.getExtendedKeyCodeForChar(c));
                     robot.keyRelease(KeyEvent.getExtendedKeyCodeForChar(c));
-                    robot.delay(100);
+                    robot.delay(300);
                 }
 
                 robot.keyPress(KeyEvent.VK_CONTROL);

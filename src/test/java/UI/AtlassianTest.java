@@ -25,7 +25,7 @@ public class AtlassianTest {
     public void setUp() {
         driver= WebDriverFactory.getDriver();
         driver.get(url);
-      }
+    }
 
     @Test(priority = 1)
     public void loginToApplication() {

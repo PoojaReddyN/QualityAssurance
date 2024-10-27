@@ -22,7 +22,7 @@ public class ApiTesting {
                 .build();
     }
 
-   // @Test
+    @Test
     public void postMethod() {
         String body = "{\n" +
                 "        \"userId\": 1,\n" +
