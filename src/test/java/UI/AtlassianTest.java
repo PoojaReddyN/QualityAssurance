@@ -15,7 +15,7 @@ public class AtlassianTest {
 
     String email = ConfigLoader.getProperty("email");
     String password = ConfigLoader.getProperty("password");
-    String url = ConfigLoader.getProperty("Browseruri");
+    String url = ConfigLoader.getProperty("BrowserUri");
     WebDriver driver;
     GooglePage googlePage;
     AtlassionHomePage atlassionHomePage;
