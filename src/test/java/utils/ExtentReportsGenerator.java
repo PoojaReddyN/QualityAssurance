@@ -26,15 +26,16 @@ public class ExtentReportsGenerator {
         test.log(Status.PASS, "Successful Test Case execution: " + result.getName());
     }
 
-    public void onTestFailure(ITestResult result) {
-        test = extent.createTest(result.getName());
-        test.log(Status.FAIL, "Failed Test Case execution: " + result.getName());
-        test.log(Status.FAIL, "Cause of Failure execution: " + result.getThrowable());
-    }
 
     public void onTestSkipped(ITestResult result) {
         test = extent.createTest(result.getName());
         test.log(Status.SKIP, "Skipped Test Case execution: " + result.getName());
+    }
+
+    public void onTestFailure(ITestResult result) {
+        test = extent.createTest(result.getName());
+        test.log(Status.FAIL, "Failed Test Case execution: " + result.getName());
+        test.log(Status.FAIL, "Cause of Failure execution: " + result.getThrowable());
     }
 
     public void onFinish(ITestContext context) {
