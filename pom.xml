@@ -18,6 +18,12 @@
                     <target>17</target>
                 </configuration>
             </plugin>
+
+            <plugin>
+                <groupId>org.sonarsource.scanner.maven</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version> <!-- Update to the latest version -->
+            </plugin>
         </plugins>
     </build>
     <properties>
@@ -90,6 +96,14 @@
             <artifactId>java-client</artifactId>
             <version>9.3.0</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.jacoco/jacoco-maven-plugin -->
+        <dependency>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.8.12</version>
+        </dependency>
+
 
 
     </dependencies>
